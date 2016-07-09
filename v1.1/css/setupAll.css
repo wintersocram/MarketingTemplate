@@ -1,0 +1,54 @@
+/*
+SETUP ALL
+*/
+
+* {
+	font-family: Scala Sans, Arial;
+	margin: 0px;
+	border: 0px none;
+	padding: 0px;
+	/*box-sizing: border-box;*/
+}
+body {
+	margin: 0;
+}
+h1 {
+	margin: 0;
+	height: 70px;
+	background-color: rgba(130,195,65,1);
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+	font-size: 40px;
+}
+h2 {
+	color: rgba(91,136,42,1);
+	text-align: center;
+}
+h3 {
+	text-align: center;
+	padding-left: 50px;
+}
+.hideDiv {
+	display: none;
+}
+.hide {
+	display: none;
+}
+.hideText {
+	display: none;
+}
+
+.divs {
+	border: 1px dashed black;
+}
+.buttonControl {
+	position: absolute; 
+	margin: 0px;
+	top: 0px; 
+	text-align: center; 
+	font-size: 18px; 
+}
+width
+left
+right

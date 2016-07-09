@@ -1,0 +1,46 @@
+/* General items */
+* {	background-repeat: no-repeat; }
+html { font-family: Arial; font-size: 10pt; }
+p { margin-top: 0; }
+
+/* Default table grid */
+.table-grid { width: 100%; border-collapse: collapse; text-align: left;}
+.table-grid td { padding: 1px 5px; border: 1px solid #000000; }
+.table-grid thead td { background-color: #D0D0D0; font-weight: bold;}
+.table-grid tfoot td { background-color: #F0F0F0; font-weight: bold; }
+.table-grid.shading tbody tr:nth-child(odd) { background-color: #F0F0F0; }
+
+/* Light Red and Light Red Shading */
+.table-light-red { width: 100%; border-collapse: collapse; color: #a13536; text-align: left; border-color: #c04f50; }
+.table-light-red td{ padding: 1px 5px; border: 0 }
+.table-light-red tbody tr:last-child td { border-bottom: 1px solid }
+.table-light-red thead td, .table-light-red tfoot td { font-weight: bold; border-top: 1px solid; border-bottom: 1px solid; }
+.table-light-red.shading tbody tr:nth-child(odd) { background-color: #efd3d2; }
+
+/* Light Blue and Light Blue Shading */
+.table-light-blue { width: 100%; border-collapse: collapse; color: #37608d; text-align: left; border-color: #5082b8;}
+.table-light-blue td { padding: 1px 5px; border: 0 }
+.table-light-blue tbody tr:last-child td { border-bottom: 1px solid }
+.table-light-blue thead td, .table-light-blue tfoot td { font-weight: bold; border-top: 1px solid; border-bottom: 1px solid; }
+.table-light-blue.shading tbody tr:nth-child(odd) { background-color: #d3dfed; }
+.table-light-blue tbody td { border: 0; }
+
+/* List Blue and List Blue Shading */
+.table-list-blue { width: 100%; border-collapse: collapse; color: #000000; text-align: left; }
+.table-list-blue td { padding: 1px 5px; border: 1px solid #5082b8; }
+.table-list-blue thead td, .table-list-blue tfoot td { font-weight: bold; border: 0;}
+.table-list-blue thead td { color: #FFFFFF; background-color: #5082b8; }
+.table-list-blue.shading  tbody tr:nth-child(odd) { background-color: #d3dfed; }
+
+/* List Red and List Red Shading */
+.table-list-red { width: 100%; border-collapse: collapse; color: #000000; text-align: left; }
+.table-list-red td { padding: 1px 5px; border: 1px solid #c04f50; }
+.table-list-red thead td, .table-list-red tfoot td { font-weight: bold; border: 0;}
+.table-list-red thead td { color: #FFFFFF; background-color: #c04f50; }
+.table-list-red.shading  tbody tr:nth-child(odd) { background-color: #efd3d2; }
+
+/* No Style */
+.table-no-style { 
+	width: 100%; 
+	border-collapse: collapse; 
+}

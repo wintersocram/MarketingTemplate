@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+<link rel="stylesheet" href="css/
+	<!-- CSS -->
+		<link rel="stylesheet" href="css/context_web_styles.css">
+		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/smoothness.min.css">
+		<link rel="stylesheet" href="css/setupPhoto.css">
+		<link rel="stylesheet" href="css/setupText.css">
+		<link rel="stylesheet" href="css/setupAll.css">
+	</head>
+	<body>
+
+
+
+
+
+
+<!--
+HTML ALL
+-->
+<!-- 
+<div style="position: relative;">
+    <div id="info" style="position: absolute">
+        <spam id="mouseX"></spam><br>
+        <spam id="mouseY"></spam><br>
+        <spam id="vNewPosX"></spam><br>
+        <spam id="vNewPosY"></spam><br>
+        <spam id="vMinMouseX"></spam><br>
+        <spam id="vMinMouseY"></spam><br>
+        <spam id="vMaxMouseX"></spam><br>
+        <spam id="vMaxMouseY"></spam><br>
+        <spam id="vMaxElementX"></spam><br>
+        <spam id="vMaxElementY"></spam>
+    </div>
+-->
+<header>
+    <h1>Sagicor</h1>
+    <div id="headerRelative" style="position: relative; width: 80%; height: 50px; margin: 5px auto; padding: 0px;">
+        <div id="header2" style="position: absolute; margin-top: 1px;">
+            <h2>Template Creator</h2>
+            <h3></h3>
+        </div>
+        <input id="btnPrevious" class="buttonControl" value="" style="width: 250px; left: 10px;" type="button">
+        <input id="btnNext" class="buttonControl" value="" style="width: 220px; right: 10px;" type="button">
+    </div>
+</header>
+<div id="step1" class="hideDiv" style="margin-left: 300px">
+    <div style="display: block; margin: 0 auto;">
+        <!-- FRAME SELECT -->
+        <div id="frameSelection" class="step1Internal ">
+            <label>Select the model</label>
+            <div class="frameGroup">
+                <div class="frameBox">
+                    <input value="BrandA1" name="frame" checked="checked" type="radio">
+                    <img src="images/BrandA1.png" width="100px" height="100px">
+                    <p style="text-align: center;">
+                        Image size:<br>
+                        727.5px x 929.75px (17.8cm x 22.9cm) 
+                    </p>
+                </div>
+                <div class="frameBox">
+                    <input value="BrandA2" name="frame" type="radio">
+                    <img src="images/BrandA2.png" width="100px" height="100px">
+                    <p style="text-align: center;">
+                        Image size:<br>
+                        727.5px x 929.75px (17.8cm x 22.9cm) 
+                    </p>
+                </div>
+            </div>
+            <div class="frameGroup">
+                <div class="frameBox">
+                    <input value="BrandB1" name="frame" type="radio">
+                    <img src="images/BrandB1.png" width="100px" height="100px">
+                    <p style="text-align: center;">
+                        Image size:<br>
+                        816px x 1056px (21.6cm x 27.9cm) 
+                    </p>
+                </div>
+                <div class="frameBox">
+                    <input value="BrandB2" name="frame" type="radio">
+                    <img src="images/BrandB2.png" width="100px" height="100px">
+                    <p style="text-align: center;">
+                        Image size:<br>
+                        816px x 1056px (21.6cm x 27.9cm) 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- PHOTO LOAD -->
+        <div id="photoSelection" class="step1Internal">
+            <label>Select image uploaded</label>
+            <div class="photoBox">
+                <input id="selectPhoto" type="file" accept="image/*">
+                <br>
+                <br>
+            </div>
+        </div>
+        <div id="orientationSelection" class="step1Internal">
+            <label>Choose orientation</label>
+            <div class="photoBox">
+                <select name="orientation">
+                    <option value="Portrait">Portrait</option>
+                    <option value="Landscape">Landscape (not disponible to test)</option>
+                </select>
+            </div>
+        </div>
+        <div id="logotypeSelection" class="step1Internal">
+            <label>Choose logotype</label>
+            <div class="photoBox">
+                <select id="logotypeName">
+                    <option value="Logo_BlackOnClear">Black</option>
+                    <option value="Logo_ColorOnClear">Color</option>
+                    <option value="Logo_Pantone376C382COnClear">Pantone376C</option>
+                    <option value="Logo_Pantone2995COnClear">Pantone2995C</option>
+                    <option value="Logo_White">White</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+STEP 2 - SETUP TEXT
+-->
+<div id="step2" class="hideDiv" style="height: 11in;">
+    <div id="externalContainer">
+        <div id="imageContainer" class="internalContainers">
+            <img id="photoStep2" src="file://C:/Projects/Sagicor/img/baseImg/200x270_placeimg_animals1.jpg"><br>
+            <img id="frameStep2" src="file://"><br>
+            <div id="nameClient" class="textEdit divs"></div><br>
+            <div id="title1" class="textEdit divs"></div><br>
+            <div id="title2" class="textEdit divs"></div><br>
+            <div id="title3" class="textEdit divs"></div><br>
+            <img id="logotype" class="textEdit divs" src="file://C:Projects/Sagicor/img/baseImg/Logo_White.png"><br>
+        </div>
+        <div id="toolContainer" class="internalContainers">
+            <div class="toolGroup" style="height: 70px; top: 5px;">
+                <div style="background-color: rgba(200,200,200,1);margin: 10px 0px 2px 0px; padding: 5px 0px; text-align: center">
+                    Element: 
+                </div>
+                <p>ELEMENT SELECTED : <spam id="itemSelected"></spam></p><br>
+                <div style="background-color: rgba(200,200,200,1);margin: 10px 0px 2px 0px; padding: 5px 0px; text-align: center">
+                    Text setup: 
+                </div>
+                <p>TAPE TEXT TO INSERT : </p>
+                <input id="preTextId" value="" style="margin-bottom: 0px;" placeholder="tape pre-text here" type="text">
+                <select id="originText">
+                    <option value="NotSelected">select the field</option>
+                    <option value="fullName">fullName</option>
+                </select>
+                <input id="posText" value="" style="margin-bottom: 0px;" placeholder="tape pos-text here" type="text">
+                <textarea id="textToSet" style="margin-bottom: 0px;" rows="3" cols="40"></textarea>
+                <input id="setValue" value="UPDATE TEXT" style="margin-left: 0px;" type="button">
+                <p>
+                    TEXT COLOR : 
+                    <input id="fontColor" value="#000000" type="color">
+                </p>
+                <br>
+                <p>
+                    TEXT SIZE : 
+                    <input id="fontSize" value="10" min="12" max="30" step="2" style="width: 80px;" type="range">
+                    <spam id="showSize">12</spam> 
+                </p>
+                <div style="background-color: rgba(200,200,200,1);margin: 10px 0px 2px 0px; padding: 5px 0px; text-align: center">
+                    Position and Size of box: 
+                </div>
+                <p>
+                    POS/SIZE STEPS : 
+                    <input id="steps" value="10" min="0" max="100" step="10" style="width: 50px;" type="range">
+                    <spam id="showSteps">10</spam> 
+                </p>
+                <!-- buttons -/+ width and -/+ height -->
+                <br>
+                <p>BOX POSITION : </p>
+                <div class="toolGroup" style="height: 80px">
+                    <input id="goUp" class="toolButton posButton" value="up" style="width: 50px; top: 0px; left: 70px;" type="button">
+                    <input id="goDown" class="toolButton posButton" value="down" style="width: 50px; top: 40px; left: 70px;" type="button">
+                    <input id="goLeft" class="toolButton posButton" value="left" style="width: 50px; top: 20px; left: 0px;" type="button">
+                    <input id="goRight" class="toolButton posButton" value="right" style="width: 50px; top: 20px; left: 140px;" type="button">
+                </div>
+                <!-- buttons -/+ top and -/+ left -->
+                <br>
+                <p>BOX SIZE : </p>
+                <div style="height: 100px">
+                    <p style="text-align: center;">
+                        <input id="lessWidth" class="toolButton sizeButton" value="- -" style="width: 50px;" type="button">
+                        Width 
+                        <input id="moreWidth" class="toolButton sizeButton" value="+ +" style="width: 50px;" type="button">
+                    </p>
+                    <p style="text-align: center;">
+                        <input id="lessHeight" class="toolButton sizeButton" value="- -" style="width: 50px;" type="button">
+                        Height 
+                        <input id="moreHeight" class="toolButton sizeButton" value="+ +" style="width: 50px;" type="button">
+                    </p>
+                </div>
+                <input id="logoName" value="Logo_Pantone2995COnClear" type="hidden">
+            </div>
+            <input id="checkValue" class="test" value="test values" style="position: absolute; top: 7in;" type="button">
+            <input id="addDiv" class="test" value="addDiv" style="position: absolute; top: 7in; left: 9.3in;" type="button">
+        </div>
+    </div>
+</div>
+<input id="imagePath" value="C:/Projects/Sagicor/img/baseImg/" type="text">
+<!--
+BUTTON CONTROLL
+-->
+<div id="buttonControll">
+    <form id="formSagicor" method="POST" action="@action@">
+        <input id="jsonTest" type="hidden">
+        <input id="json" name="json" type="hidden">
+    </form>
+</div>
+<!--
+ALERT BOX
+-->
+<div id="dialog">
+    <p id="msgImgWarning" class="msgHide">
+        Make sure that the image was uploaded to image folder (<span id="path"></span>) before go to Step 2! 
+    </p>
+    <p id="msgImgNotFound" class="msgHide">Select the image before go to nex step!</p> 
+</div>
+<!-- 
+</div>
+-->
+
+
+
+
+
+
+	<!-- JS -->
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/setupObjConfig.js"></script>
+		<script type="text/javascript" src="js/setupImageFrameConfig.js"></script>
+		<script type="text/javascript" src="js/setupPhoto.js.js"></script>
+		<script type="text/javascript" src="js/setupText.js"></script>
+		<script type="text/javascript" src="js/setupAll.js"></script>
+		<script type="text/javascript" src="js/drag.js"></script>
+	</body>
+</html>

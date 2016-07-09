@@ -1,0 +1,74 @@
+/*
+SETUP PHOTO
+*/
+
+#step1 {
+	position: relative;
+	height: 500px;
+}
+.step1Internal {
+	position: absolute;
+}
+
+#frameSelection {
+	top: 0px;
+	left: 0px; 
+}
+#photoSelection {
+	top: 200px;
+	left: 510px; 
+}
+
+#orientationSelection {
+	top: 0px;
+	left: 510px; 
+}
+#logotypeSelection {
+	top: 100px;
+	left: 510px; 
+}
+
+#frameSelection {
+	display: block;
+	background-color: rgba(0,0,0,0.1);
+	width: 430px;
+	margin: 10px;
+	padding: 10px;
+	vertical-align: top;
+	border: 1px solid rgba(91,136,42,1);
+}
+#frameSelection .frameGroup {
+	display: inline-block;
+	width: 200px;
+}
+#frameSelection .frameBox {
+	background-color: white;
+	width: 160px;
+	margin: 10px;
+	padding: 10px;
+	vertical-align: top;
+	border: 1px solid gray;
+}
+#frameSelection .frameBox {
+	padding-bottom: 0px;
+}
+#frameSelection .frameBox {
+	width: 160px;
+}
+#selectPhoto {
+	width: 300px;
+	border: 2px solid rgba(91,136,42,1); 
+}
+#frameSelection .frameBox input[type=radio] {
+	vertical-align: top;
+	margin-top: 40px;
+	margin-right: 20px;
+}
+/*
+#frameSelection .frameBox p {
+	vertical-align: top;
+	margin-top: 40px;
+	margin-right: 20px;
+}
+*/
+
