@@ -1,0 +1,22 @@
+@media (min-device-width: 992px) 
+  and (max-device-width: 1200px) { 
+  	body {
+  		font-size: 12px;
+  	}
+  	h1 {
+  		line-height: 40px;
+  	}
+  	.navigation_box {
+		margin-bottom: 5px !important;
+	}
+	.icon_label {
+		width: 25px !important;
+	}
+	.btn-group p {
+		font-size: 0.75em !important;
+	}
+
+
+
+	
+}

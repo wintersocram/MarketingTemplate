@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<!--************ BOOTSTRAP CSS ************-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!--************ JQUERY ************-->
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!--************ BOOTSTRAP JS ************-->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!--************ BOOTSTRAP ICONS ************-->
+	<link rel="stylesheet" type="text/css" href="css/icon_style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+	<!--************ RESET ************-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<!--************ STYLE ************-->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<!-- MARKETING AND LINKS -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+				<div class="col-lg-2 col-md-2">
+					<a class="brand" href="#">
+						<img alt="Brand" src="img/sagicorlogo.gif">
+					</a>
+				</div>
+
+				<div class="col-lg-10 col-md-10">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 text-center navigation_title">
+							<h1>Marketing</h1>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-7 col-md-7"></div>
+						<div class="col-lg-5 col-md-5 navigation_box">
+							<nav>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#">MENU_1</a></li>
+									<li><a href="#">MENU_2</a></li>
+									<li><a href="#">MENU_3</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container-fluid -->
+
+
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 tool_outer_wrapper">
+					<div class="col-lg-4 col-md-4 tool_menu_wrapper">
+						<div class="element_tool">
+							<p>Selected Element: </p>
+							<span id="itemSelected"></span>
+							<input type="text" id="select_box" disabled>
+						</div>
+
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="pill" href="#text_box">Text</a></li>
+							<li><a data-toggle="pill" href="#formatting_box">Formatting</a></li>
+							<li><a data-toggle="pill" href="#container_box">Container</a></li>
+							<li><a data-toggle="pill" href="#border_box">Border</a></li>
+						</ul>
+
+						<div class="tab-content">
+							<div id="text_box" class="tab-pane fade in active">
+								<div class="tool_wrapper">
+									<div class="commands_wrapper">
+										<h5>TEXT</h5>
+
+										<div>
+											<div class="row">
+												<div class="col-lg-6 col-md-6">
+													<input type="radio" name="text_field" id="text" value="text" checked>
+													<label for="text_field">Text</label>
+												</div>
+												<div class="col-lg-6 col-md-6">
+													<input type="radio" name="text_field" id="text_db" value="text_db">
+													<label for="text_field">Text + DB Field</label>
+												</div>
+											</div>
+										</div>
+										<hr>
+
+										<div class="text_tool_1">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Text Setup: </p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<input type="text" id="preTextId" value="" placeholder="Type your text here">
+													<select id="originText">
+														<option value="NotSelected">Select an option</option>
+														<option value="fullName">DB Text 1</option>
+														<option value="">DB Text 2</option>
+														<option value="">DB Text 3</option>
+													</select>
+													<input type="text" id="posText" value="" placeholder="Type your text here" >
+												</div>
+											</div>
+										</div>
+
+										<div class="text_tool_2">
+											<div class="row">
+												<div class="col-lg-12 col-md-12">
+													<textarea id="textToSet" rows="3"></textarea>
+													<button type="reset" id="reset">Reset</button>
+													<button type="button" id="setValue">Update</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+										
+							<div id="formatting_box" class="tab-pane fade">
+								<div class="tool_wrapper">
+									<div class="commands_wrapper">
+										<h5>FORMATTING</h5>
+
+										<div class="text_color_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Color: </p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<input id="fontColor" value="#000000" type="color">
+												</div>
+											</div>
+										</div>
+										<hr>
+
+										<div class="text_size_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Size: <span id="showSize">12</span></p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<input type="range" id="fontSize" value="10" min="12" max="30" step="2">
+												</div>
+											</div>
+										</div>
+										<hr>
+
+										<div class="text_deco_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Decoration: </p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<button type="button"><span class="icon-italic"></span></button>
+													<button type="button"><span class="icon-underline"></span></button>
+													<button type="button"><span class="icon-bold"></span></button>
+												</div>
+											</div>
+										</div>
+										<hr>
+
+										<div class="text_align_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Align: </p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<button type="button"><span class="icon-align-left"></span></button>
+													<button type="button"><span class="icon-align-center"></span></button>
+													<button type="button"><span class="icon-align-right"></span></button>
+													<button type="button"><span class="icon-align-justify"></span></button>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div> <!-- /text_box -->
+
+							<div id="container_box" class="tab-pane fade">
+								<div class="tool_wrapper">
+									<div class="commands_wrapper">
+										<h5>CONTAINER</h5>
+
+										<div class="size_steps_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Size Steps: <span id="showSteps">10</span></p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<input type="range" id="steps" value="10" min="0" max="100" step="10">
+												</div>
+											</div>
+										</div>
+										<hr>
+
+										<div class="move_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Move: </p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<div class="move_arrows">
+														<div>
+															<button type="button"><span class="icon-arrow-circle-up"></span></button>
+														</div>
+														<div>
+															<button type="button"><span class="icon-arrow-circle-left"></span></button>
+															<button type="button"><span class="icon-arrow-circle-right"></span></button>
+														</div>
+														<div>
+															<button type="button"><span class="icon-arrow-circle-down"></span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<hr>
+
+										<div class="size_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Size: </p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<div class="size_arrows">
+														<div>
+															<div>
+																<button>
+																	<span class="icon-minus-circle"></span>
+																</button>
+																<p>
+																	<span class="icon-arrows-v"></span>
+																</p>
+																<button>
+																	<span class="icon-plus-circle"></span>
+																</button>
+															</div>
+															<div>
+																<button>
+																	<span class="icon-minus-circle"></span>
+																</button>
+																<p>
+																	<span class="icon-arrows-h"></span>
+																</p>
+																<button>
+																	<span class="icon-plus-circle"></span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="border_box" class="tab-pane fade">
+								<div class="tool_wrapper">
+									<div class="commands_wrapper">
+										<h5>BORDER</h5>
+										<div class="border_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Line: </p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<button type="button"><i class="fa fa-minus"></i></button>
+													<button type="button"><i class="fa fa-ellipsis-h"></i></button>
+													<button type="button"><span class="icon-times-circle"></span></button>
+												</div>
+											</div>
+											
+										</div>
+										<hr>
+										<div class="border_color_tool">
+											<div class="row">
+												<div class="col-lg-5 col-md-6">
+													<p>Color: </p>
+												</div>
+												<div class="col-lg-7 col-md-6">
+													<input id="borderColor" value="#000000" type="color">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> <!-- /border_box -->
+						</div>
+
+						<div class="btns_load_page">
+							<div class="btn-group page_group" role="group">
+								<div class="row">
+									<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+										<div class="col-lg-2 col-md-3">
+											<button type="button" class="btn btn-info btn-xs pull-left"><span class="icon-arrow-circle-left"></span></button>
+										</div>
+										<div class="col-lg-8 col-md-6">
+											<p>Page <span>2</span> of <span>1</span></p>
+										</div>
+										<div class="col-lg-2 col-md-3">
+											<button type="button" class="btn btn-info btn-xs pull-right"><span class="icon-arrow-circle-right"></span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="load_group">
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<button type="button" class="btn btn-info">Load</button>
+										<button type="button" class="btn btn-info">Save</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8 col-md-8 preview_wrapper">
+
+
+
+					</div> <!-- /preview_wrapper -->
+				</div>
+			</div> <!-- /row -->
+		</div> <!-- /container-fluid -->
+	</header>
+
+
+</body>
+</html>
